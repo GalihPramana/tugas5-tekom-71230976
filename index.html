@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@galihprmn__ - 71230976 - Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">Welcome to My Web Page</header>
+        <aside class="sidebar">
+        <img src="D:\Praktikum tekkom\tugas5-tekom-71230976\my image.jpg" width="400px" height="auto" alt="Foto Saya">
+        </aside>
+        <article class="content">
+            <h2>About Me</h2>
+            <h4>Galih Pramana Chandra Prasetya</h4>
+            <ul>
+                <li><h3>@galihprmn__</h3></li>
+                <li><h3>Solo, Jawa Tengah, Indonesia</h3></li>
+                <li><h3><a href="https://www.instagram.com/galihprmn__/">Instagram</a></h3></li>
+            </ul>
+            <h3>Skillset</h3>
+            <ol>
+                <li>C</li>
+                <li>Python</li>
+                <li>Html</li>
+                <li>Javascript</li>
+                <li>CSS</li>
+            </ol>
+        </article>
+        
+        <button id="tombolGantiWarna"> Tombol Ganti Warna </button>
+        
+        <footer class="footer">Thank You for Visiting My Web Page</footer>
+      </div>
+      <script>
+        const bodyElement = document.body; 
+
+        function gantiWarnaRandom() {
+            const warnaList = ['red', 'blue', 'green','yellow','white'];
+            const randomIndex = Math.floor(Math.random() * warnaList.length);
+            const warnaRandom = warnaList[randomIndex];
+            bodyElement.style.backgroundColor = warnaRandom;
+        }
+
+        const tombolGantiWarna =document.getElementById('tombolGantiWarna');
+        tombolGantiWarna.addEventListener('click', gantiWarnaRandom);
+        
+    </script>
+</body>
+</html>
